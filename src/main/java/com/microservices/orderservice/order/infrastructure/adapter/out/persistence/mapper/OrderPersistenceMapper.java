@@ -5,7 +5,7 @@ import com.microservices.orderservice.order.infrastructure.adapter.out.persisten
 import org.springframework.stereotype.Component;
 
 @Component
-public class OrderPersistenseMapper {
+public class OrderPersistenceMapper {
 
     public Order toDomain(OrderEntity entity){
         return Order.builder()
