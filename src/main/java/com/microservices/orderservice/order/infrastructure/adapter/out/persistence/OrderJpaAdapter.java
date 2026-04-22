@@ -3,7 +3,7 @@ package com.microservices.orderservice.order.infrastructure.adapter.out.persiste
 import com.microservices.orderservice.order.domain.model.Order;
 import com.microservices.orderservice.order.domain.port.out.OrderRepositoryPort;
 import com.microservices.orderservice.order.infrastructure.adapter.out.persistence.entity.OrderEntity;
-import com.microservices.orderservice.order.infrastructure.adapter.out.persistence.mapper.OrderPersistenseMapper;
+import com.microservices.orderservice.order.infrastructure.adapter.out.persistence.mapper.OrderPersistenceMapper;
 import com.microservices.orderservice.order.infrastructure.adapter.out.persistence.repository.OrderJpaRepository;
 import com.microservices.orderservice.shared.domain.model.PageDomain;
 import lombok.RequiredArgsConstructor;
@@ -16,7 +16,7 @@ import java.util.Optional;
 public class OrderJpaAdapter implements OrderRepositoryPort {
 
     private final OrderJpaRepository orderJpaRepository;
-    private final OrderPersistenseMapper mapper;
+    private final OrderPersistenceMapper mapper;
 
     @Override
     public Order save(Order order){
