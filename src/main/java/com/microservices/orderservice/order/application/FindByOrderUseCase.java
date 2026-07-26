@@ -10,7 +10,7 @@ import lombok.RequiredArgsConstructor;
 public class FindByOrderUseCase implements FindByIdOrderPort {
 
     private final OrderRepositoryPort orderRepositoryPort;
-//metodo de busqueda
+//metodo de busqueda por id
     @Override
     public Order findById(Long id){
         return orderRepositoryPort.findById(id)
